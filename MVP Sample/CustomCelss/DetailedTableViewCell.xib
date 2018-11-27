@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailedTableViewCell" rowHeight="61" id="KGk-i7-Jjw" customClass="DetailedTableViewCell" customModule="MVP_Sample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXT-Ub-P2D">
+                        <rect key="frame" x="10" y="11" width="293" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDA-UG-YUq">
+                        <rect key="frame" x="10" y="34" width="295" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="gDA-UG-YUq" secondAttribute="bottom" constant="6.5" id="7Lm-YA-ghX"/>
+                    <constraint firstItem="FXT-Ub-P2D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="JPj-6G-d1z"/>
+                    <constraint firstAttribute="trailing" secondItem="gDA-UG-YUq" secondAttribute="trailing" constant="11" id="LLG-Rc-Lac"/>
+                    <constraint firstItem="gDA-UG-YUq" firstAttribute="top" secondItem="FXT-Ub-P2D" secondAttribute="bottom" constant="2" id="eTM-Vj-ChE"/>
+                    <constraint firstItem="gDA-UG-YUq" firstAttribute="top" secondItem="FXT-Ub-P2D" secondAttribute="bottom" constant="2" id="hbJ-C8-w1N"/>
+                    <constraint firstItem="FXT-Ub-P2D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="nUD-QG-jk4"/>
+                    <constraint firstItem="gDA-UG-YUq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rCa-A0-SNU"/>
+                    <constraint firstAttribute="trailing" secondItem="FXT-Ub-P2D" secondAttribute="trailing" constant="13" id="ycM-6U-d4k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="gDA-UG-YUq" id="NRP-zY-BNH"/>
+                <outlet property="headerLabel" destination="FXT-Ub-P2D" id="uKz-Tp-Dak"/>
+            </connections>
+            <point key="canvasLocation" x="-222" y="87"/>
+        </tableViewCell>
+    </objects>
+</document>

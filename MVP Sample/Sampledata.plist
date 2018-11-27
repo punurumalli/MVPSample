@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>rows</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>About MVP</string>
+			<key>Description</key>
+			<string>Model–view–presenter (MVP) is a derivation of the model–view–controller (MVC) architectural pattern, and is used mostly for building user interfaces.
+
+In MVP, the presenter assumes the functionality of the &quot;middle-man&quot;. In MVP, all presentation logic is pushed to the presenter.[1]</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Model</string>
+			<key>Description</key>
+			<string>It is the system that contains the logic of the business and it is made up by different software pieces depending on the complexity of the app. In a “Domain oriented” system we will have to structure the layers of the tactic DDD, with some variations coming from the particularity of every front-end app. In the mobile apps, the main parts of the model that we perceive here in Apiumhub are:It is the system that contains the logic of the business and it is made up by different software pieces depending on the complexity of the app. In a “Domain oriented” system we will have to structure the layers of the tactic DDD, with some variations coming from the particularity of every front-end app. In the mobile apps, the main parts of the model that we perceive here in Apiumhub are:
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Presenter</string>
+			<key>Description</key>
+			<string>It is responsible for making a connector between the events emitted by the view and connecting them with the model, specifically with the services of the model. Here in Apiumhub, we understand the presenter as a piece of software that connects View with Model, but that lacks logic, the whole state of the data of the view and its behavior is handled in the service and through the presenter, again that returns the transformed data or responds to an event as appropriate. In iOS, usually, the presenter is a class that receives in the init method the view and the service and connects the needed methods. The presenter is normally being used inside an extension class from the main ViewController and it happens when the connection settings are done.
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>View</string>
+			<key>Description</key>
+			<string>The view is a layout which task is to render the UI and to react to the user events. In the case of iOS, the View will consist of a Protocol that exposes the methods of the user’s events and a ViewController that is responsible for materializing and rendering the UI components and capturing the events that pass to the next component of the pattern, the presenter.
+</string>
+		</dict>
+	</array>
+</dict>
+</plist>
